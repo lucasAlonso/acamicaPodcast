@@ -1,0 +1,237 @@
+
+.navbar{
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+.logo{
+    left: 10px;
+    position: absolute;
+    top: 10px; 
+}
+
+#toggle{
+    display: none;
+}
+#hamb{
+    direction: rtl;
+    font-size: 24px;
+    height: 44px;
+    text-indent: 16px;
+    top: 40px;
+    
+}
+.nav{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: right;
+    vertical-align: center;
+    width: 100%;
+}
+
+
+.menu{
+    display: none;
+    
+}
+
+#toggle:checked ~ .menu{
+    align-self: flex-end;
+    background-color: $color-primario;
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+    text-indent: 16px;
+    width: 100%;
+}
+
+#toggle:checked + #hamb:after {
+    content: "X";
+    position: fixed;
+    top: 4px;
+    right: 0;
+    bottom: 0;
+    background: white;
+    width: 20%;
+    height: 37px;
+}
+  
+  
+.item-menu{
+   color: white;
+   display: flex;
+   flex-direction: column;
+   height: 50px;
+   justify-content: center;
+   letter-spacing: 0;
+   line-height: 28px;
+   text-decoration: none;
+
+    &:hover{
+        color: #00F3BB;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 28px;
+        text-decoration: line-through;
+        }
+    &:active{
+        color: rgba(6,10,36,0.56);
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 28px;
+        }
+    }
+.tachado{
+    text-decoration: line-through;
+}
+.blue{
+    color: $color-primario;
+    animation: blink 1s linear infinite;}
+@keyframes blink{
+        0%{opacity: 0;}
+        50%{opacity: .5;}
+        100%{opacity: 1;}}
+    
+.titulo{
+    display: block;
+    font-size: 36px;    
+    margin-top: 29px;
+    text-indent: 16px;}
+
+.subtitulo{
+    @extend %text-artic;
+    margin: 16px 0px 36px 14px;
+    width: 268px;
+ 
+}
+.boton{
+   @extend %btn;
+   margin-bottom: 24px;
+   margin-left: 5%;      
+  
+}
+.background{
+    @extend %back;
+    height: 100%;;
+    transform: skewY(-5deg);
+    position: absolute;
+    
+    }
+.episodios{
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+}
+
+.title-ep{
+    font-size: 36px;
+    color: white;
+    padding-top: 64px;
+    margin-left: 16px;
+    margin-bottom: 12px;
+    }
+.items-episodios{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+            
+}
+
+iframe:last-child{
+    margin-bottom: 96px;
+    
+}
+
+.phone-image-conteiner{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    transform: translate(0px, -126px);
+        
+}
+.phone-image{
+    width: 320px;
+    height: auto;
+    
+
+}
+.titulo-art{
+    
+    margin: 16px;
+    font-size: 36px;
+    line-height: 42px;
+    color: $color-oscuro;
+}
+.article{
+    display: flex;  
+    font-family: "IBM Plex Mono";
+    margin: 16px;
+    font-size: 14px;
+    line-height: 22px;
+}
+.gallery-image{
+    width: 100%;
+}
+.topicos{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.item-topic{
+    font-family: "BMPlexSans-SemiBold";
+    font-size: 24px;
+    display: grid;
+    flex-flow: column;
+    justify-items: center;
+    text-align: center;
+    color: $color-oscuro;
+    margin: 24px;
+    width: 268px;
+    
+}
+ .novedades {
+    @extend    %back;
+    height: 341px;
+   display: flex;
+   flex-flow: column;
+   align-content: center;
+   justify-content: center;
+   align-items: center;
+   clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+   .boton{
+    margin:0;
+}
+
+   }
+ 
+.titulo-nov{
+   width: 288px;
+   height: 126px;
+   font-size: 36px;
+   text-align: center;
+   color: white;
+   padding-top: 44px;
+   
+  
+}
+.fondo-pagina{
+   background-color: white;
+   transform: translate(0px, -36px);
+   height: 111px;
+   display: flex;
+   flex-flow: column;
+   
+}
+.copyleft{
+   font-family: "IBM Plex Mono";
+   margin: 36px;
+   font-size: 14px;
+}
+.redes{
+   display: flex;
+   justify-content: space-evenly;
+   
+}

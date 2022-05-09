@@ -1,0 +1,106 @@
+
+@media (min-width: 955px){
+   
+    .menu{
+        width: 582px;
+        display: flex;
+        flex-flow: row;        
+        align-self: flex-end;
+        justify-content: flex-start;
+        text-align: left;
+        text-indent: 48px;
+        height: 44px;
+        }
+    #hamb{
+        display: none;
+    }
+    .item-menu{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 50px;
+        color: $color-oscuro;
+        text-decoration: none;
+        letter-spacing: 0;
+        line-height: 28px;
+     }
+    .titulo{
+        display: flex;
+        top: 120px;
+        margin-left: 200px;
+        font-size: 64px;    }
+    .subtitulo{
+        color: #060A24;
+        display: block;
+        font-size: 16px;
+        height: 48px;
+        line-height: 24px;
+        margin-top: 16px;
+        margin-left: 200px;
+        text-align: justify;
+        width: 528px;
+    }     
+    .boton{
+        margin-left: 200px;
+        height: 56px;
+       
+    }   
+    .title-ep{
+        font-size: 48px;
+        color: white;
+        padding-top: 170px;
+        margin-left: 200px;
+        margin-bottom: 50px;
+            }
+    .items-episodios{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+              
+           
+    }
+    .items-episodios iframe{
+        width: 584px;
+        height: 232px;
+        margin-top: 72px;}
+    iframe:last-child{
+        margin-bottom: 170px;
+    }
+    .info{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 60px 80px 60px 1fr;
+        margin-left: 14%;
+                
+    }
+    .phone-image-conteiner{ 
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+    .titulo-art{
+        margin-top: 30px;
+        align-self: end;
+    }
+    .article{
+        width: 450px;
+    }
+    .galeria{
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        }
+    .topicos{
+        flex-flow: row;
+    }
+    .fondo-pagina{
+       align-items: center;
+       flex-flow: row;
+       justify-content: space-between;
+        .redes{
+            justify-content: space-evenly;
+            width: 25%;
+            justify-self: flex-end;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+$color-primario: #0000EC;
+$color-oscuro: #060A24;
+$color-boton: #00F3BB;
+$color-grad1: #0000FF;
+$color-grad2: #0000A3;
+
+%btn{
+    display: flex;
+    background-color: $color-boton;
+    width: 288px;
+    height: 48px;
+    font-size: 16px;
+    font-family: "IBM Plex Mono Medium";  
+    justify-content: center;
+    align-items: center;
+    color: $color-oscuro;
+    &:hover {
+        background-image: linear-gradient(225deg, $color-grad1 0%, $color-boton 100%);
+    }
+}
+%text-artic{
+    display: block;
+    line-height: 22px;
+    font-size: 14px;
+    font-family: "IBM Plex Mono";
+}
+%back{
+    display: flex;
+    z-index: -1;
+    width: 100%;
+    background-image: linear-gradient(225deg, $color-grad1, $color-grad2);
+    
+
+}
+
